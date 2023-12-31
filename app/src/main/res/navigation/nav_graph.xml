@@ -15,4 +15,9 @@
         android:name="vef.ter.logic.ui.level.LevelFragment"
         android:label="fragment_level"
         tools:layout="@layout/fragment_level" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="vef.ter.logic.gameplay.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
 </navigation>

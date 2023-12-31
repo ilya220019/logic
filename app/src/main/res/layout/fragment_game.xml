@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameplay.GameFragment">
+
+    <ImageView
+        android:id="@+id/img_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="300dp"/>
+    <TextView
+        android:id="@+id/desk"
+        app:layout_constraintTop_toBottomOf="@id/img_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_but"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <LinearLayout
+        android:id="@+id/ll_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:id="@+id/one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="40dp" />
+
+        <ImageView
+            android:id="@+id/two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="40dp" />
+
+        <ImageView
+            android:id="@+id/three"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="40dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
