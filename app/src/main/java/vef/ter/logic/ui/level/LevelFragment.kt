@@ -39,8 +39,9 @@ class LevelFragment : Fragment() {
         binding.fon.loadImage("https://cdn.pixabay.com/photo/2023/11/30/07/51/bridge-8420945_1280.jpg")
         var a  = pref.getCount()
         binding.play.setOnClickListener {
-            var b  = a +1
-            pref.count(b.toInt())
+            if (a==0){
+            var b  = a + 1
+            pref.count(b.toInt())}
 if(!pref.alertShow()){
     showAlertDialog()
 }
